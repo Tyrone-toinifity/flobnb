@@ -1,11 +1,14 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap'); */
 
 :root {
-  --primaryColor: #5997A5;
+  --primaryColor: #5997a5;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #eee;
+  --accentColor1: #fce0cc;
+  --accentColor2: #0cb4cc;
+  --accentColor3: #0078a6;
+  --accentColor4: #053d39;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
@@ -17,9 +20,115 @@
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+ul {
+  list-style: none;
 }
 
+/* .navbar */
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid var(--mainGrey);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
+.navbar {
+  height: 60px;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
 
+  z-index: 1;
+}
+.navbar-center {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+/* Hero */
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hero {
+  /* min-height: calc(100vh - 60px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#hero-video {
+  max-width: 1400px;
+  width: 100%;
+  z-index: -5;
+}
+
+.hero,
+#hero-video {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+video > img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 2rem;
+}
+.banner-btn {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--accentColor2);
+  color: var(--mainBlack);
+  border: 1px solid var(--accentColor2);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--accentColor4);
+}
+
+/* --------------- End of Hero ---------------- */

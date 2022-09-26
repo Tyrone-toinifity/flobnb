@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.89 164.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0178a7;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #08b4cb;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+        font-size: 98px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M136.6,73.27h-63.48c-3.93,0-6.39,4.26-4.43,7.67l31.74,54.98c.91,1.58,.91,3.53,0,5.11l-11.93,20.67c-1.97,3.41-6.88,3.41-8.85,0L19.5,57.51c-1.97-3.41,.49-7.67,4.43-7.67h120.3c3.93,0,6.39,4.26,4.43,7.67l-7.62,13.2c-.91,1.58-2.6,2.56-4.43,2.56Z"/>
+    <path class="cls-2" d="M155.64,29.09H14.43c-1.59,0-3.07-.85-3.86-2.23L.6,9.59c-1.72-2.97,.43-6.69,3.86-6.69H163.17c3.43,0,5.58,3.72,3.86,6.69l-11.39,19.49Z"/>
+  </g>
+  <text class="cls-3" transform="translate(167.82 114.69)"><tspan class="cls-5" x="0" y="0">F</tspan><tspan class="cls-4" x="55.55" y="0">lobnb</tspan></text>
+</svg>

@@ -19,8 +19,54 @@
     />
   </head>
   <body>
-    <div id="app"></div>
-    <p>Bobby</p>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-center">
+          <span class="nav-icon"> <i class="fas fa-bars"></i></span>
+          <li>
+            <img
+              src="./src/images/flo-text-logo.svg"
+              width="120px"
+              alt="store logo"
+            />
+          </li>
+          <li class="cart-btn">
+            <span class="nav-icon"
+              ><i class="fa-solid fa-cart-shopping"
+                ><div class="cart-items">0</div></i
+              ></span
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- hero  -->
+    <main>
+      <div class="hero">
+        <div class="banner">
+          <h1 class="banner-title">Escape the everyday</h1>
+          <button class="banner-btn">book now</button>
+        </div>
+      </div>
+      <video
+        id="hero-video"
+        autoplay
+        controls
+        aria-label="Amanda walks around deck. She stops to admire the view of her beautiful lake house in Nashville, Indiana"
+        poster="./src/images/poster-video.jpg"
+      >
+        <source src="./src/images/flobnb-720p.mp4" type="video/mp4" />
+        <img
+          src="./src/images/flobnd-hero2.jpg"
+          srcset="
+            ./src/images/flobnd-hero2-sm.jpg 400w,
+            ./src/images/flobnd-hero2-md.jpg 700w
+          "
+        />
+      </video>
+    </main>
     <script type="module" src="./src/javascript/main.js"></script>
   </body>
 </html>

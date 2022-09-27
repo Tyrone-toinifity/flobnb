@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flow Bnb</title>
+    <title>Flo Bnb</title>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/81374bb392.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,24 +46,91 @@
         </ul>
       </nav>
     </header>
-    <!-- navbar end -->
+    <!-- locations -->
+    <div class="wrapper">
+      <div class="location-filter">
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined">cottage</span>
+          <span>Cottage</span>
+        </button>
+
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined">beach_access</span>
+          <span>Beach</span>
+        </button>
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined">diamond</span>
+          <span>Luxe</span>
+        </button>
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined">camping</span>
+          <span>Camping</span>
+        </button>
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined"> forest </span>
+
+          <span>Forest</span>
+        </button>
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined"> meeting_room </span>
+          <span>Shared</span>
+        </button>
+        <button
+          aria-hidden="false"
+          role="radio"
+          aria-checked="true"
+          type="button"
+        >
+          <span class="material-symbols-outlined"> downhill_skiing </span>
+          <span>Ski</span>
+        </button>
+      </div>
+    </div>
     <!-- hero  -->
     <main>
-      <div class="hero">
-        <div class="banner">
-          <h1 class="banner-title">Escape the everyday</h1>
-          <button class="banner-btn">book now</button>
-        </div>
-      </div>
       <video
         id="hero-video"
         autoplay
         controls
-        aria-label="Amanda walks around deck. She stops to admire the view of her beautiful lake house in Nashville, Indiana"
+        loop
+        muted
+        controlsList="nodownload"
+        aria-label="Traveler walks around deck. She stops to admire the view of her beautiful lake house in Nashville, Indiana"
         poster="./src/images/poster-video.jpg"
       >
         <source src="./src/images/flobnb-720p.mp4" type="video/mp4" />
         <img
+          alt="rental home"
           src="./src/images/flobnd-hero2.jpg"
           srcset="
             ./src/images/flobnd-hero2-sm.jpg 400w,
@@ -66,7 +138,111 @@
           "
         />
       </video>
+      <div class="hero">
+        <div class="banner">
+          <h1 class="banner-title">Escape the everyday</h1>
+          <button class="banner-btn">book now</button>
+        </div>
+      </div>
     </main>
+    <!-- Products -->
+    <section class="products">
+      <div class="section-title">
+        <h2>bookings</h2>
+      </div>
+      <div class="products-center">
+        <!-- single Product -->
+        <article class="product">
+          <figure class="img-container">
+            <img
+              src="./src/images/Luxe-house2/Luxe-house1.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <span class="material-symbols-outlined"> add </span>Book
+            </button>
+          </figure>
+          <div class="pricing">
+            <div>
+              <h3>Salt Lake City, UT</h3>
+              <h4>$519</h4>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> star </span
+              ><span>New</span>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <figure class="img-container">
+            <img
+              src="./src/images/Luxe-house/Luxe-house1.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <span class="material-symbols-outlined"> add </span>Book
+            </button>
+          </figure>
+          <div class="pricing">
+            <div>
+              <h3>Malibu, CA</h3>
+              <h4>$890</h4>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> star </span
+              ><span>New</span>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <figure class="img-container">
+            <img
+              src="./src/images/Beach-house/Beach-house0.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <span class="material-symbols-outlined"> add </span>Book
+            </button>
+          </figure>
+          <div class="pricing">
+            <div>
+              <h3>St.James City, FL</h3>
+              <h4>$289</h4>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> star </span
+              ><span>New</span>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <figure class="img-container">
+            <img
+              src="./src/images/Beach-house2/Beach-house1.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <span class="material-symbols-outlined"> add </span>Book
+            </button>
+          </figure>
+          <div class="pricing">
+            <div>
+              <h3>Cape Cpde, MA</h3>
+              <h4>$433</h4>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> star </span
+              ><span>New</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <script type="module" src="./src/javascript/main.js"></script>
   </body>
 </html>

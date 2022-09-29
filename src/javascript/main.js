@@ -1,23 +1,12 @@
+
 import "../css/style.css";
 import "./script.js";
 
-import Swiper, { Navigation, Pagination } from "../../node_modules/swiper";
+import Swiper from "../../node_modules/swiper";
+import "../../node_modules/swiper/swiper-bundle.min.css";
 
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-// init Swiper:
-var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+  

@@ -1,4 +1,5 @@
 // Imports
+// import productsJson from "../../products.json" assert { type: "json" };
 import productsJson from "../../products.json";
 
 // Variables

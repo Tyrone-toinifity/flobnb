@@ -3,65 +3,215 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "queen panel bed",
-        "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
+        "title": "Malibu, CA",
+        "price": 890,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./images/Luxe-house/Luxe-house1.jpeg",
+                "./images/Luxe-house/Luxe-house2.jpeg",
+                "./images/Luxe-house/Luxe-house3.jpeg",
+                "./images/Luxe-house/Luxe-house4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "king panel bed",
-        "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+        "title": "Salt Lake City, UT",
+        "price": 519,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./images/Luxe-house2/Luxe-house1.jpeg",
+                "./images/Luxe-house2/Luxe-house2.jpeg",
+                "./images/Luxe-house2/Luxe-house3.jpeg",
+                "./images/Luxe-house2/Luxe-house4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "single panel bed",
-        "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
+        "title": "St.James City, FL",
+        "price": 289,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./images/Beach-house/Beach-house1.jpeg",
+                "./images/Beach-house/Beach-house2.jpeg",
+                "./images/Beach-house/Beach-house3.jpeg",
+                "./images/Beach-house/Beach-house4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "twin panel bed",
-        "price": 22.99,
-        "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
+        "title": "Cape Cod, MA",
+        "price": 433,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./images/Beach-house2/Beach-house1.jpeg",
+                "./images/Beach-house2/Beach-house2.jpeg",
+                "./images/Beach-house2/Beach-house3.jpeg",
+                "./images/Beach-house2/Beach-house4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "fridge",
-        "price": 88.99,
-        "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
+        "title": "Estacada, OR",
+        "price": 125,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/camp/camp1.jpeg",
+                "./src/images/camp/camp2.jpeg",
+                "./src/images/camp/camp3.jpeg",
+                "./src/images/camp/camp4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "dresser",
-        "price": 32.99,
-        "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
+        "title": "Carpinteria, CA",
+        "price": 147,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/camp2/camp1.jpeg",
+                "./src/images/camp2/camp2.jpeg",
+                "./src/images/camp2/camp3.jpeg",
+                "./src/images/camp2/camp4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
-        "price": 45.99,
-        "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+        "title": "Whitewater, CA",
+        "price": 244,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/Cottage/Cottage1.jpeg",
+                "./src/images/Cottage/Cottage2.jpeg",
+                "./src/images/Cottage/Cottage3.jpeg",
+                "./src/images/Cottage/Cottage4.jpeg"
+              ]
+            }
+          }
+        }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
-        "price": 33.99,
-        "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+        "title": "Alba, TX",
+        "price": 188,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/Cottage2/Cottage1.jpeg",
+                "./src/images/Cottage2/Cottage2.jpeg",
+                "./src/images/Cottage2/Cottage3.jpeg",
+                "./src/images/Cottage2/Cottage4.jpeg"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Sherman Oaks, CA",
+        "price": 88,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/shared1/shared1.jpeg",
+                "./src/images/shared1/shared2.jpeg",
+                "./src/images/shared1/shared3.jpeg",
+                "./src/images/shared1/shared4.jpeg"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Boston, MA",
+        "price": 88,
+        "image": {
+          "fields": {
+            "file": {
+              "url": [
+                "./src/images/shared2/shared1.jpeg",
+                "./src/images/shared2/shared2.jpeg",
+                "./src/images/shared2/shared3.jpeg",
+                "./src/images/shared2/shared4.jpeg"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Park City, UT",
+        "price": 88,
+        "image": {
+          "fields": { "file": { "url": ["./src/images/ski/ski1.jpeg","./src/images/ski/ski1.jpeg","./src/images/ski/ski2.jpeg","./src/images/ski/ski3.jpeg","./src/images/ski/ski4.jpeg"] } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "Boston, MA",
+        "price": 88,
+        "image": {
+          "fields": {
+            "file": {
+              "url": ["./src/images/ski2/ski1.jpeg","./src/images/ski2/ski1.jpeg","./src/images/ski2/ski2.jpeg","./src/images/ski2/ski3.jpeg","./src/images/ski2/ski4.jpeg"]
+            }
+          }
+        }
       }
     }
   ]

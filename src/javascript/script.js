@@ -1,5 +1,4 @@
 // Imports
-// import productsJson from "../../products.json" assert { type: "json" };
 import productsJson from "../../products.json";
 
 // Variables
@@ -12,11 +11,11 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
-
 // Main cart
 let cart = [];
 
 // Get products
+
 class Products {
   async getProducts() {
     try {
@@ -25,6 +24,7 @@ class Products {
       products = products.map((item) => {
         const { title, price } = item.fields;
         const { id } = item.sys;
+        // const image = item.fields.image.fields.file.url[0];
         const image = item.fields.image.fields.file.url;
         return { title, price, id, image };
       });
@@ -39,16 +39,50 @@ class Products {
 class UI {
   displayProducts(products) {
     let result = "";
+    // let newImage = "";
+
     products.forEach((product) => {
-      result += `        
-      
+      const printPhoto = (img) => {
+        return `<img
+          src=${img[0]}
+          alt=""
+          class="product-img swiper-slide"
+          /> <img
+          src=${img[1]}
+          alt=""
+
+          class="product-img swiper-slide"
+          />
+          <img
+          src=${img[2]}
+          alt=""
+
+          class="product-img swiper-slide"
+          />
+          <img
+          src=${img[3]}
+          alt=""
+
+          class="product-img swiper-slide"
+          />
+        
+          `;
+      };
+      //   product
+      result += `    
       <article class="product">
       <figure class="img-container">
-        <img
-          src="${product.image}"
-          alt=""
-          class="product-img"
-        />
+        <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+
+        ${printPhoto(product.image)}
+
+
+              <div class="swiper-button-next show-swiper"></div>
+              <div class="swiper-button-prev show-swiper"></div>
+              <div class="swiper-pagination show-swiper"></div>
+            </div>
+
         <button class="bag-btn" data-id=${product.id}>
           <h4>Reserve</h4>
         </button>
@@ -65,8 +99,24 @@ class UI {
       </div>
     </article>`;
     });
-    // productsDOM.innerHTML = result;
-    productsDOM.innerHTML += result;
+    productsDOM.insertAdjacentHTML("beforeend", result);
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      keyboard: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+    });
   }
 }
 

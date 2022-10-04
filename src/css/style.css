@@ -7,6 +7,7 @@
   --accentColor2: #0cb4cc;
   --accentColor3: #0078a6;
   --accentColor4: #053d39;
+  --swiper-theme-color: white !important; /* swiper color*/
   --mainSpacing: 0.05rem;
   --mainTransition: all 0.3s linear;
 }
@@ -18,8 +19,7 @@
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 ul {
   list-style: none;
@@ -160,7 +160,7 @@ video {
 .banner-title {
   font-size: 2.5rem;
   font-weight: 500;
-letter-spacing: var(--mainSpacing);
+  letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem;
 }
 .banner-btn {
@@ -218,6 +218,7 @@ letter-spacing: var(--mainSpacing);
   font-weight: 300;
   transition: var(--mainTransition);
   transform: translateX(150%);
+  z-index: 1;
   cursor: pointer;
   color: var(--mainWhite);
   border-radius: 5px 0 0 5px;
@@ -236,9 +237,9 @@ letter-spacing: var(--mainSpacing);
   min-width: 12rem;
   transition: var(--mainTransition);
 }
-.img-container:hover .product-img {
+/* .img-container:hover .product-img {
   filter: brightness(80%);
-}
+} */
 
 .product h3 {
   text-transform: capitalize;
@@ -418,6 +419,7 @@ letter-spacing: var(--mainSpacing);
     margin-top: 0.8rem;
     font-size: 1.2rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -426,13 +428,15 @@ letter-spacing: var(--mainSpacing);
     min-width: 450px;
   }
 }
-.swiper {
-  width: 100%;
-  height: 200px;
+
+/* swiper slider */
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+  opacity: 0 !important;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #bbb;
+.mySwiper:hover .show-swiper {
+  opacity: 1 !important;
 }

@@ -2,17 +2,19 @@
   "items": [
     {
       "sys": { "id": "1" },
+
       "fields": {
+        "type": "luxe",
         "title": "Malibu, CA",
         "price": 890,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Luxe-house/Luxe-house1.jpeg",
-                "./images/Luxe-house/Luxe-house2.jpeg",
-                "./images/Luxe-house/Luxe-house3.jpeg",
-                "./images/Luxe-house/Luxe-house4.jpeg"
+                "./images/Luxe-house/Luxe-house1.webp",
+                "./images/Luxe-house/Luxe-house2.webp",
+                "./images/Luxe-house/Luxe-house3.webp",
+                "./images/Luxe-house/Luxe-house4.webp"
               ]
             }
           }
@@ -21,17 +23,19 @@
     },
     {
       "sys": { "id": "2" },
+
       "fields": {
+        "type": "luxe",
         "title": "Salt Lake City, UT",
         "price": 519,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Luxe-house2/Luxe-house1.jpeg",
-                "./images/Luxe-house2/Luxe-house2.jpeg",
-                "./images/Luxe-house2/Luxe-house3.jpeg",
-                "./images/Luxe-house2/Luxe-house4.jpeg"
+                "./images/Luxe-house2/Luxe-house1.webp",
+                "./images/Luxe-house2/Luxe-house2.webp",
+                "./images/Luxe-house2/Luxe-house3.webp",
+                "./images/Luxe-house2/Luxe-house4.webp"
               ]
             }
           }
@@ -40,17 +44,19 @@
     },
     {
       "sys": { "id": "3" },
+
       "fields": {
+        "type": "beach-house",
         "title": "St.James City, FL",
         "price": 289,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Beach-house/Beach-house1.jpeg",
-                "./images/Beach-house/Beach-house2.jpeg",
-                "./images/Beach-house/Beach-house3.jpeg",
-                "./images/Beach-house/Beach-house4.jpeg"
+                "./images/Beach-house/Beach-house1.webp",
+                "./images/Beach-house/Beach-house2.webp",
+                "./images/Beach-house/Beach-house3.webp",
+                "./images/Beach-house/Beach-house4.webp"
               ]
             }
           }
@@ -59,17 +65,19 @@
     },
     {
       "sys": { "id": "4" },
+
       "fields": {
+        "type": "beach-house",
         "title": "Cape Cod, MA",
         "price": 433,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Beach-house2/Beach-house1.jpeg",
-                "./images/Beach-house2/Beach-house2.jpeg",
-                "./images/Beach-house2/Beach-house3.jpeg",
-                "./images/Beach-house2/Beach-house4.jpeg"
+                "./images/Beach-house2/Beach-house1.webp",
+                "./images/Beach-house2/Beach-house2.webp",
+                "./images/Beach-house2/Beach-house3.webp",
+                "./images/Beach-house2/Beach-house4.webp"
               ]
             }
           }
@@ -78,17 +86,19 @@
     },
     {
       "sys": { "id": "5" },
+
       "fields": {
+        "type": "camp",
         "title": "Estacada, OR",
         "price": 125,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/camp/camp1.jpeg",
-                "./images/camp/camp2.jpeg",
-                "./images/camp/camp3.jpeg",
-                "./images/camp/camp4.jpeg"
+                "./images/camp/camp1.webp",
+                "./images/camp/camp2.webp",
+                "./images/camp/camp3.webp",
+                "./images/camp/camp4.webp"
               ]
             }
           }
@@ -97,17 +107,19 @@
     },
     {
       "sys": { "id": "6" },
+
       "fields": {
+        "type": "camp",
         "title": "Carpinteria, CA",
         "price": 147,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/camp2/camp1.jpeg",
-                "./images/camp2/camp2.jpeg",
-                "./images/camp2/camp3.jpeg",
-                "./images/camp2/camp4.jpeg"
+                "./images/camp2/camp1.webp",
+                "./images/camp2/camp2.webp",
+                "./images/camp2/camp3.webp",
+                "./images/camp2/camp4.webp"
               ]
             }
           }
@@ -116,17 +128,19 @@
     },
     {
       "sys": { "id": "7" },
+
       "fields": {
+        "type": "cottage",
         "title": "Whitewater, CA",
         "price": 244,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Cottage/Cottage1.jpeg",
-                "./images/Cottage/Cottage2.jpeg",
-                "./images/Cottage/Cottage3.jpeg",
-                "./images/Cottage/Cottage4.jpeg"
+                "./images/Cottage/Cottage1.webp",
+                "./images/Cottage/Cottage2.webp",
+                "./images/Cottage/Cottage3.webp",
+                "./images/Cottage/Cottage4.webp"
               ]
             }
           }
@@ -135,17 +149,19 @@
     },
     {
       "sys": { "id": "8" },
+
       "fields": {
+        "type": "cottage",
         "title": "Alba, TX",
         "price": 188,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/Cottage2/Cottage1.jpeg",
-                "./images/Cottage2/Cottage2.jpeg",
-                "./images/Cottage2/Cottage3.jpeg",
-                "./images/Cottage2/Cottage4.jpeg"
+                "./images/Cottage2/Cottage1.webp",
+                "./images/Cottage2/Cottage2.webp",
+                "./images/Cottage2/Cottage3.webp",
+                "./images/Cottage2/Cottage4.webp"
               ]
             }
           }
@@ -154,17 +170,19 @@
     },
     {
       "sys": { "id": "9" },
+
       "fields": {
+        "type": "shared",
         "title": "Sherman Oaks, CA",
         "price": 88,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/shared1/shared1.jpeg",
-                "./images/shared1/shared2.jpeg",
-                "./images/shared1/shared3.jpeg",
-                "./images/shared1/shared4.jpeg"
+                "./images/shared1/shared1.webp",
+                "./images/shared1/shared2.webp",
+                "./images/shared1/shared3.webp",
+                "./images/shared1/shared4.webp"
               ]
             }
           }
@@ -173,17 +191,19 @@
     },
     {
       "sys": { "id": "10" },
+
       "fields": {
+        "type": "shared",
         "title": "Boston, MA",
         "price": 88,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/shared2/shared1.jpeg",
-                "./images/shared2/shared2.jpeg",
-                "./images/shared2/shared3.jpeg",
-                "./images/shared2/shared4.jpeg"
+                "./images/shared2/shared1.webp",
+                "./images/shared2/shared2.webp",
+                "./images/shared2/shared3.webp",
+                "./images/shared2/shared4.webp"
               ]
             }
           }
@@ -192,23 +212,43 @@
     },
     {
       "sys": { "id": "11" },
+
       "fields": {
+        "type": "ski",
         "title": "Park City, UT",
         "price": 88,
         "image": {
-          "fields": { "file": { "url": ["./images/ski/ski1.jpeg","./images/ski/ski1.jpeg","./images/ski/ski2.jpeg","./images/ski/ski3.jpeg","./images/ski/ski4.jpeg"] } }
+          "fields": {
+            "file": {
+              "url": [
+                "./images/ski/ski1.webp",
+                "./images/ski/ski1.webp",
+                "./images/ski/ski2.webp",
+                "./images/ski/ski3.webp",
+                "./images/ski/ski4.webp"
+              ]
+            }
+          }
         }
       }
     },
     {
       "sys": { "id": "12" },
+
       "fields": {
+        "type": "ski",
         "title": "Boston, MA",
         "price": 88,
         "image": {
           "fields": {
             "file": {
-              "url": ["./images/ski2/ski1.jpeg","./images/ski2/ski1.jpeg","./images/ski2/ski2.jpeg","./images/ski2/ski3.jpeg","./images/ski2/ski4.jpeg"]
+              "url": [
+                "./images/ski2/ski1.webp",
+                "./images/ski2/ski1.webp",
+                "./images/ski2/ski2.webp",
+                "./images/ski2/ski3.webp",
+                "./images/ski2/ski4.webp"
+              ]
             }
           }
         }

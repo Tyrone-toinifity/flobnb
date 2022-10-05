@@ -7,7 +7,7 @@
   --accentColor2: #0cb4cc;
   --accentColor3: #0078a6;
   --accentColor4: #053d39;
-  --swiper-theme-color: white !important; /* swiper color*/
+  --swiper-theme-color: #fff !important; /* swiper color*/
   --mainSpacing: 0.05rem;
   --mainTransition: all 0.3s linear;
 }
@@ -419,7 +419,6 @@ video {
     margin-top: 0.8rem;
     font-size: 1.2rem;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -428,6 +427,9 @@ video {
     min-width: 450px;
   }
 }
+
+
+
 
 /* swiper slider */
 
@@ -439,4 +441,32 @@ video {
 
 .mySwiper:hover .show-swiper {
   opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next {
+  background-image: url("../images/nav/forward.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url("../images/nav/back.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
 }

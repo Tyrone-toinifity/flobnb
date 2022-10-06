@@ -153,7 +153,7 @@
       "fields": {
         "type": "cottage",
         "title": "Alba, TX",
-        "price": 188,
+        "price": 206,
         "image": {
           "fields": {
             "file": {
@@ -216,12 +216,11 @@
       "fields": {
         "type": "ski",
         "title": "Park City, UT",
-        "price": 88,
+        "price": 525,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/ski/ski1.webp",
                 "./images/ski/ski1.webp",
                 "./images/ski/ski2.webp",
                 "./images/ski/ski3.webp",
@@ -237,13 +236,12 @@
 
       "fields": {
         "type": "ski",
-        "title": "Boston, MA",
-        "price": 88,
+        "title": "Durango, CO",
+        "price": 628,
         "image": {
           "fields": {
             "file": {
               "url": [
-                "./images/ski2/ski1.webp",
                 "./images/ski2/ski1.webp",
                 "./images/ski2/ski2.webp",
                 "./images/ski2/ski3.webp",

@@ -68,12 +68,13 @@ header {
 }
 .cart-items {
   position: absolute;
-  top: -8px;
+  top: -4px;
   right: -8px;
   background: var(--primaryColor);
-  padding: 0 5px;
-  border-radius: 30%;
+  padding: 2px 6px;
+  border-radius: 50%;
   color: var(--mainWhite);
+  font-size: 1.1rem;
 }
 /*  */
 header > nav .material-symbols-outlined {
@@ -223,6 +224,9 @@ video {
   color: var(--mainWhite);
   border-radius: 5px 0 0 5px;
 }
+
+
+
 .bag-btn:hover {
   filter: brightness(110%);
 }
@@ -237,10 +241,11 @@ video {
   min-width: 12rem;
   transition: var(--mainTransition);
 }
-/* .img-container:hover .product-img {
-  filter: brightness(80%);
-} */
-
+.bag-btn-Booked {
+  background-color: #fff;
+  color: var(--primaryColor);
+  transform: translateX(0);
+}
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -312,6 +317,7 @@ video {
 .close-cart {
   font-size: 1.7rem;
   cursor: pointer;
+  padding: 1.4rem 1rem;
 }
 .cart h2 {
   text-transform: capitalize;
@@ -427,9 +433,6 @@ video {
     min-width: 450px;
   }
 }
-
-
-
 
 /* swiper slider */
 

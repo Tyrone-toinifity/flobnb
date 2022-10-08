@@ -12,23 +12,62 @@ const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
 
+// buttons
+const filterBtn = document.querySelectorAll(".filter-btn");
+const cottageBtn = document.querySelector(".cottage");
+
+filterBtn.forEach((item) => {
+  item.addEventListener("click", (e) => {
+  });
+});
+
 // Main cart
 let cart = [];
 // buttons
 let buttonsDOM = [];
 
 // Get products
+
 class Products {
   async getProducts() {
     try {
       let data = productsJson;
       let products = data.items;
+      // TODO add filter button
+      // filterButton('ski')
+      // filterBtn.forEach((item) => {
+      //   item.addEventListener("click", (e) => {
+      //     let name = "shared";
+      //     filterButton("ski");
+      //   });
+      // });
+      // function filterButton(name) {
+      //   let newProduct = Object.entries(products);
+      //   let filterProducts = newProduct.filter(([key, value]) => {
+      //     console.log(value);
+      //     let productFiltered = Object.entries(value);
+      //     console.log(productFiltered);
+
+      //     productFiltered = productFiltered.filter(([key, value]) => {
+      //       if (value.type == name) {
+      //         return productFiltered;
+      //       }
+      //     });
+      //     if (productFiltered.length == 1) {
+      //       return productFiltered;
+      //     }
+      //     products = [];
+      //   });
+      //   products.unshift(filterProducts[1][1]);
+      //   products.unshift(filterProducts[0][1]);
+      // }
+
       products = products.map((item) => {
         const { title, price } = item.fields;
         const { id } = item.sys;
-        // const image = item.fields.image.fields.file.url[0];
         const image = item.fields.image.fields.file.url;
-        return { title, price, id, image };
+        const type = item.fields.type;
+        return { title, price, id, image, type };
       });
       return products;
     } catch (error) {
@@ -41,6 +80,7 @@ class Products {
 class UI {
   displayProducts(products) {
     let result = "";
+
     products.forEach((product) => {
       const printPhoto = (img) => {
         return `<img
@@ -67,17 +107,13 @@ class UI {
           />
           `;
       };
-
-      //   product
+      // products
       result += `    
       <article class="product">
       <figure class="img-container">
         <div class="swiper mySwiper ">
         <div class="swiper-wrapper">
-
         ${printPhoto(product.image)}
-
-
               <div class="swiper-button-next show-swiper"></div>
               <div class="swiper-button-prev show-swiper"></div>
               <div class="swiper-pagination show-swiper"></div>
@@ -147,7 +183,7 @@ class UI {
         // display cart Item
         this.addCartItem(cartItem);
         // show cart
-        this.showCart();
+        // this.showCart();
       });
     });
   }
@@ -254,8 +290,10 @@ class UI {
     cartItem.forEach((id) => this.removeItem(id));
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);
+      this.hideCart();
     }
   }
+
   removeItem(id) {
     cart = cart.filter((item) => item.id !== id);
     this.setCartValues(cart);
@@ -306,4 +344,3 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cartLogic();
     });
 });
-// console.log(buttonsDOM);

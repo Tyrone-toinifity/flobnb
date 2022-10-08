@@ -71,7 +71,7 @@ header {
   top: -4px;
   right: -8px;
   background: var(--primaryColor);
-  padding: 2px 6px;
+  padding: 0.2rem;
   border-radius: 50%;
   color: var(--mainWhite);
   font-size: 1.1rem;
@@ -224,8 +224,6 @@ video {
   color: var(--mainWhite);
   border-radius: 5px 0 0 5px;
 }
-
-
 
 .bag-btn:hover {
   filter: brightness(110%);
@@ -472,4 +470,116 @@ video {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   transform: scale(1.2);
+}
+
+/* Error */
+
+.error-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.error {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 2rem;
+  border-radius: 2rem;
+  height: 80vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.error > * {
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+}
+
+.error > div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  color: var(--accentcolor5);
+}
+.error > div > h2,
+.error > div > h4,
+.error > div > h5 {
+  color: #484848;
+}
+
+.error > div > h2 {
+  font-size: 10rem;
+  color: var(--accentColor3);
+}
+.error > div > h4 {
+  font-size: 2.2rem;
+  width: 500px;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+.error > div > h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.error > div > a {
+  color: var(--accentColor3);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.error > div > a:hover {
+  text-decoration: underline;
+  filter: brightness(120%);
+}
+@media only screen and (max-width: 1100px) {
+  .error {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .error > * {
+    padding: 1rem;
+  }
+  .error > div {
+    align-items: center;
+    margin: 0;
+  }
+  .error > figure > img {
+    width: 100%;
+    margin: 0;
+  }
+  .error > div > h2 {
+    margin: 1rem;
+    font-size: 6.3rem;
+    color: var(--accentColor3);
+  }
+  .error > div > h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    width: 350px;
+  }
+  .error > div > h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.5rem;
+  }
+
+  .error > div > a {
+    font-size: 1.8rem;
+    align-self: center;
+    margin: 0;
+  }
+
+  .error-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 }

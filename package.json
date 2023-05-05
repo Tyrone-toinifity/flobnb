@@ -10,8 +10,11 @@
   },
   "devDependencies": {
     "vite": "^4.3.5"
+<<<<<<< HEAD
   },
   "dependencies": {
     "terser": "^5.17.1"
+=======
+>>>>>>> a605557
   }
 }

@@ -12,14 +12,6 @@ const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
 
-// buttons
-const filterBtn = document.querySelectorAll(".filter-btn");
-const cottageBtn = document.querySelector(".cottage");
-
-filterBtn.forEach((item) => {
-  item.addEventListener("click", (e) => {});
-});
-
 // Main cart
 let cart = [];
 // buttons
@@ -32,7 +24,6 @@ class Products {
     try {
       let data = productsJson;
       let products = data.items;
-
       products = products.map((item) => {
         const { title, price } = item.fields;
         const { id } = item.sys;
@@ -43,7 +34,10 @@ class Products {
 
       return products;
     } catch (error) {
-      console.log(error);
+      const errorMessage = document.querySelector(".error-message");
+      errorMessage.textContent =
+        "An error occurred while getting the products.";
+      errorMessage.style.display = "block";
     }
   }
 }
@@ -139,23 +133,17 @@ class UI {
         button.innerText = "Booked!";
         button.disabled = true;
       }
-      button.addEventListener("click", (e) => {
+      button.addEventListener("click", () => {
         button.innerText = "Booked!";
         button.disabled = true;
         button.style.font = "inherit";
         button.classList.add("bag-btn-Booked");
         // get product from products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
-        // add product to the cart
         cart = [...cart, cartItem];
-        // save cart in local storage
         Storage.saveCart(cart);
-        // set cart values
         this.setCartValues(cart);
-        // display cart Item
         this.addCartItem(cartItem);
-        // show cart
-        // this.showCart();
       });
     });
   }

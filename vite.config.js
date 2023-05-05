@@ -1,12 +1,14 @@
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: "./src",
   build: {
-    outDir: "../dist",
-    minify: "terser",
+    emptyOutDir: true,
     rollupOptions: {
-      minify: true,
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
     },
   },
+  publicDir: "./src",
 });

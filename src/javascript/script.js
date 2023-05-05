@@ -119,6 +119,7 @@ class UI {
       fadeEffect: {
         crossFade: true,
       },
+      lazy: true,
     });
   }
 
